@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { toast } from "react-toastify";
 import { useAuth } from "../../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import "./Login.css"; 
@@ -23,7 +22,7 @@ const Login = () => {
         navigate("/");
       } 
     } catch (error) {
-      toast.error("An error occurred. Please try again.");
+       console.error(error);
     } finally {
       setLoading(false);
     }

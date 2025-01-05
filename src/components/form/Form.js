@@ -40,7 +40,6 @@ function Form({ onClose, onSuccess }) {
     if (password) formData.append("password", password);
 
     try {
-      console.log("userData?.id :",userData?._id);
       const res = await update(formData, userData?._id);
 
       if (res.status === 200) {

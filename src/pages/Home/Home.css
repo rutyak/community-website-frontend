@@ -166,7 +166,7 @@
 @media (min-width: 601px) and (max-width: 1024px) {
   .users-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
   }
 
   .user-name {
@@ -216,8 +216,3 @@
   }
 }
 
-@media (min-width: 1025px) {
-}
-
-@media (min-width: 1280px) {
-}

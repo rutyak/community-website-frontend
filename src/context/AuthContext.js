@@ -92,7 +92,6 @@ export const AuthProvider = ({ children }) => {
     const toastId = "logoutToast";
     localStorage.removeItem("token");
     localStorage.removeItem("user");
-    // navigate("/")
     toast.success("Logout successful!", { toastId });
     setUser(null);
     setUserData(null);
