@@ -1,40 +1,28 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import { toast } from "react-toastify";
-import MenuDrawer from "../MenuDrawer/MenuDrawer";
+import MenuDrawer from "../menuDrawer/MenuDrawer";
 import "./Navbar.css";
 
 function Navbar() {
-  const { user, logout } = useAuth();
-  const [drawerOpen, setDrawerOpen] = useState(false);
-  const navigate = useNavigate();
-
-  const toggleDrawer = (open) => {
-    setDrawerOpen(open);
-  };
-
-  const handleLogout = () => {
-    logout();
-    toast.success("Logged out successfully!");
-    navigate("/");
-  };
+  const { user, logout, drawerOpen, toggleDrawer } = useAuth();
 
   return (
     <nav className="navbar">
       <div className="navbar-logo">CommunityHub</div>
 
       <div className="navbar-links">
-        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
         {user ? (
           <div className="user-menu">
-            <button
-              className="user-menu-button"
-              onClick={() => navigate("/profile")}
-            >
-              Profile
-            </button>
-            <button onClick={handleLogout}>Logout</button>
+            <Link to="/profile">
+              <button className="user-menu-button">Profile</button>
+            </Link>
+            <Link to="/">
+              <button onClick={logout}>Logout</button>
+            </Link>
           </div>
         ) : (
           <div className="auth-buttons">
@@ -49,19 +37,12 @@ function Navbar() {
       </div>
 
       <div className="mobile-menu">
-        <button
-          className="menu-button"
-          onClick={() => toggleDrawer(true)} 
-        >
+        <button className="menu-button" onClick={() => toggleDrawer(true)}>
           ☰
         </button>
         {drawerOpen && (
           <div className={`drawer ${drawerOpen ? "open" : ""}`}>
-            <MenuDrawer
-              user={user}
-              toggleDrawer={toggleDrawer}
-              handleLogout={handleLogout}
-            />
+            <MenuDrawer user={user} toggleDrawer={toggleDrawer} />
           </div>
         )}
       </div>

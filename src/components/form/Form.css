@@ -121,3 +121,19 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 480px) {
+  .input-group input,
+  .input-group textarea {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .form-box h2 {
+    font-size: 16px;
+  }
+
+  .input-group label {
+    font-size: 13px;
+  }
+}

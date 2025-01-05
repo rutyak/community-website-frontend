@@ -77,14 +77,147 @@
   }
 }
 
+@media (min-width: 480px) {
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+  }
+}
+
 @media (min-width: 768px) {
-  .posts-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  .posts-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   }
+}
+
+@media (max-width: 480px) {
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+
+  .user-card-header {
+    flex-direction: column;
+  }
+
+  .email-name {
+    text-align: center;
+  }
+
+  .user-photo {
+    margin-right: 0px;
+  }
+
+  .user-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .user-email {
+    font-size: 10px;
+  }
+
+  .view-profile-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-card {
+    margin: 5px;
+  }
+
+  .members-header {
+    margin-bottom: 0px;
+  }
+
+  .hero-section {
+    margin-bottom: 2px;
+  }
+
+  .members-header h2 {
+    font-size: 12px;
+  }
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 23px;
+  }
+
+  .hero-description {
+    font-size: 10px;
+  }
+
+  .view-profile-link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+  }
+
+  .user-name {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .user-email {
+    font-size: 12px;
+  }
+
+  .user-card {
+    margin: 6px;
+  }
+
+  .members-header {
+    margin-bottom: 0px;
+  }
+
+  .hero-section {
+    margin-bottom: 3px;
+  }
+
+  .members-header h2 {
+    font-size: 17px;
+  }
+
+  .hero-section {
+    padding: 30px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .user-photo {
+    width: 47px;
+    height: 47px;
+  }
+
+  .view-profile-link {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1025px) {
+}
+
+@media (min-width: 1280px) {
 }

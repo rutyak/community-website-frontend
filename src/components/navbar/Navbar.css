@@ -49,14 +49,14 @@
 }
 
 .user-menu-button:hover {
-  background-color: #218838; 
+  background-color: #218838;
   transform: scale(1.05);
 }
 
 .user-menu button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #40684f; 
+  background-color: #40684f;
   color: white;
   border: none;
   border-radius: 30px;
@@ -76,19 +76,19 @@
 }
 
 .auth-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #13705b;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #13705b;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .auth-button:hover {
-  background-color: #00a965; 
+  background-color: #00a965;
   transform: scale(1.05);
 }
 
@@ -132,4 +132,38 @@
   .mobile-menu {
     display: block;
   }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px;
+  }
+
+  .navbar-logo {
+    font-size: 21px;
+  }
+
+  .menu-button {
+    font-size: 23px;
+  }
+
+  .form-box h2 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .drawer {
+    width: 0px;
+  }
+
+  .menu-drawer {
+    width: 156px;
+  }
+}
+
+@media (min-width: 1025px) {
+}
+
+@media (min-width: 1280px) {
 }

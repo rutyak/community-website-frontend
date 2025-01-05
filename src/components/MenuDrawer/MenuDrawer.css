@@ -4,6 +4,8 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
   height: 100vh;
+  position: fixed;
+  z-index: 10;
 }
 
 .menu-list {
@@ -38,3 +40,4 @@
 .menu-link:hover {
   color: #007bff;
 }
+
