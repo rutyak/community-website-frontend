@@ -1,0 +1,40 @@
+.menu-drawer {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  height: 100vh;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 10px 0;
+}
+
+.menu-item a,
+.menu-item {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item a:hover,
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.menu-link {
+  color: #000;
+}
+
+.menu-link:hover {
+  color: #007bff;
+}

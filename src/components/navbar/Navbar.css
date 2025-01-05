@@ -1,0 +1,135 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2bc9a3;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.user-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.user-menu button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #394343;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-menu-button:hover {
+  background-color: #218838; 
+  transform: scale(1.05);
+}
+
+.user-menu button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #40684f; 
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-menu button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #13705b;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-button:hover {
+  background-color: #00a965; 
+  transform: scale(1.05);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-text {
+  font-size: 18px;
+  color: black;
+}
+
+.menu-button {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.drawer {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.drawer.open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
