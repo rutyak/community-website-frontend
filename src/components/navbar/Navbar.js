@@ -1,5 +1,5 @@
 import React from "react";
-import MenuDrawer from "../MenuDrawer/MenuDrawer";
+import MenuDrawer from "../menuDrawer/MenuDrawer";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import "./Navbar.css";
